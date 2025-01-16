@@ -1,8 +1,7 @@
 <?php
 
-namespace Sherpa\Core\exceptions;
+namespace Sherpa\Exceptions\exceptions;
 
-use Sherpa\Core\security\Security;
 use Throwable;
 
 /**

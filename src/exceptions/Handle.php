@@ -10,6 +10,9 @@ use Exception;
  */
 class Handle
 {
+    private const string UI_LAYOUT_PATH = __DIR__ . "/../rendering/layout.html";
+    private const string UI_LAYOUT_CSS_PATH = __DIR__ . "/../rendering/style/layout.css";
+
     public private(set) Exception $exception;
 
     public function __construct(Exception $exception)
@@ -22,8 +25,23 @@ class Handle
      */
     public function render(): void
     {
-        $layout = file_get_contents(__DIR__ . "/../rendering/layout.html");
+        self::css();
+
+        $layout = file_get_contents(self::UI_LAYOUT_PATH);
 
         echo $layout;
+    }
+
+    /**
+     * Includes CSS stylesheet for rendering.
+     */
+    private static function css(): void
+    {
+        if (!in_array(self::UI_LAYOUT_CSS_PATH, get_included_files()))
+        {
+            echo "<style>";
+            include_once self::UI_LAYOUT_CSS_PATH;
+            echo "</style>";
+        }
     }
 }

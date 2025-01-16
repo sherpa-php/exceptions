@@ -1,17 +1,24 @@
-sherpa[sherpa-component=exception] > .ui-container {
+sherpa[sherpa-component=exception] > .sherpa-content {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
 }
-sherpa[sherpa-component=exception] > .ui-container > .content-body {
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body {
   display: flex;
   column-gap: 50px;
 }
-sherpa[sherpa-component=exception] > .ui-container > .content-body > aside {
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside {
   flex: none;
 }
-sherpa[sherpa-component=exception] > .ui-container > .content-body > main {
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
   flex: 1;
+}
+sherpa[sherpa-component=exception] .ui-container, sherpa[sherpa-component=exception] > .sherpa-content > header, sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside,
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
+  border: 1px solid #ff8585;
+  border-right: 20px;
+  padding: 20px;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=layout.css.map */

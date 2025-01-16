@@ -1,15 +1,31 @@
 sherpa[sherpa-component="exception"]
-  > .ui-container
+  > .sherpa-content
     display: flex
     flex-direction: column
     row-gap: 50px
 
+    > header
+      @extend .ui-container
+
     > .content-body
       display: flex
       column-gap: 50px
+
+      > aside,
+      > main
+        @extend .ui-container
 
       > aside
         flex: none
 
       > main
         flex: 1
+
+
+  .ui-container
+    border: 1px solid #ff8585
+    border-right: 20px
+
+    padding: 20px
+
+    font-weight: bolder

@@ -2,6 +2,7 @@
 
 namespace Sherpa\Exceptions\exceptions;
 
+use Exception;
 use Throwable;
 
 /**
@@ -10,7 +11,7 @@ use Throwable;
  *     Provides utilities methods.
  * </p>
  */
-class SherpaException extends \Exception
+class SherpaException extends Exception
 {
     /*
      * Sherpa Exceptions Conventions

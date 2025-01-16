@@ -1,8 +1,8 @@
 <?php
 
-namespace Sherpa\Core\exceptions\router;
+namespace Sherpa\Exceptions\exceptions\router;
 
-use Sherpa\Core\exceptions\SherpaException;
+use Sherpa\Exceptions\exceptions\SherpaException;
 use Throwable;
 
 /**

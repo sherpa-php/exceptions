@@ -1,8 +1,8 @@
 <?php
 
-namespace Sherpa\Core\exceptions\validator;
+namespace Sherpa\Exceptions\exceptions\validator;
 
-use Sherpa\Core\exceptions\SherpaException;
+use Sherpa\Exceptions\exceptions\SherpaException;
 use Throwable;
 
 /**

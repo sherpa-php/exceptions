@@ -1,8 +1,8 @@
 <?php
 
-namespace Sherpa\Core\exceptions\database;
+namespace Sherpa\Exceptions\exceptions\database;
 
-use Sherpa\Core\exceptions\SherpaException;
+use Sherpa\Exceptions\exceptions\SherpaException;
 use Throwable;
 
 /**

@@ -22,8 +22,8 @@ class Handle
      */
     public function render(): void
     {
-        echo "<pre>";
-        var_dump($this->exception);
-        echo "</pre>";
+        $layout = file_get_contents(__DIR__ . "/../rendering/layout.html");
+
+        echo $layout;
     }
 }

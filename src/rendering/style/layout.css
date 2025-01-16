@@ -1,0 +1,17 @@
+sherpa[sherpa-component=exception] > .ui-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+sherpa[sherpa-component=exception] > .ui-container > .content-body {
+  display: flex;
+  column-gap: 50px;
+}
+sherpa[sherpa-component=exception] > .ui-container > .content-body > aside {
+  flex: none;
+}
+sherpa[sherpa-component=exception] > .ui-container > .content-body > main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=layout.css.map */

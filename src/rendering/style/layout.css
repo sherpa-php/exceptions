@@ -16,7 +16,7 @@ sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
 sherpa[sherpa-component=exception] .ui-container, sherpa[sherpa-component=exception] > .sherpa-content > header, sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside,
 sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
   border: 1px solid #ff8585;
-  border-right: 20px;
+  border-radius: 20px;
   padding: 20px;
   font-weight: bolder;
 }

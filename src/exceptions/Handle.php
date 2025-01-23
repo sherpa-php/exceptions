@@ -25,23 +25,7 @@ class Handle
      */
     public function render(): void
     {
-        self::css();
-
-        $layout = file_get_contents(self::UI_LAYOUT_PATH);
-
-        echo $layout;
-    }
-
-    /**
-     * Includes CSS stylesheet for rendering.
-     */
-    private static function css(): void
-    {
-        if (!in_array(self::UI_LAYOUT_CSS_PATH, get_included_files()))
-        {
-            echo "<style>";
-            include_once self::UI_LAYOUT_CSS_PATH;
-            echo "</style>";
-        }
+        $engine = new ExceptionUI($this->exception);
+        $engine->render();
     }
 }

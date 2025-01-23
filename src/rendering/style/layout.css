@@ -1,17 +1,69 @@
+sherpa[sherpa-component=exception] {
+  font-family: sans-serif;
+  padding: 25px 100px;
+  display: block;
+}
+sherpa[sherpa-component=exception] * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 sherpa[sherpa-component=exception] > .sherpa-content {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 25px;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > header > h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > header > p.source {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: monospace;
 }
 sherpa[sherpa-component=exception] > .sherpa-content > .content-body {
   display: flex;
-  column-gap: 50px;
+  column-gap: 25px;
 }
 sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside {
   flex: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 !important;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > h2.section-title {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: grey;
+  text-align: center;
+  padding: 10px 20px 0;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > .trace-element {
+  padding: 10px 20px;
+  background-color: transparent;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > .trace-element:hover {
+  background-color: #f3f3f3;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > .trace-element > p {
+  font-family: monospace;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > .trace-element > p.function {
+  font-weight: 600;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside > .trace-element > p.source {
+  font-weight: 400;
+  color: grey;
+  font-size: 0.8rem;
 }
 sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
   flex: 1;
+}
+sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main > p.message {
+  font-weight: 500;
 }
 sherpa[sherpa-component=exception] .ui-container, sherpa[sherpa-component=exception] > .sherpa-content > header, sherpa[sherpa-component=exception] > .sherpa-content > .content-body > aside,
 sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
@@ -19,6 +71,7 @@ sherpa[sherpa-component=exception] > .sherpa-content > .content-body > main {
   border-radius: 20px;
   padding: 20px;
   font-weight: bolder;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=layout.css.map */

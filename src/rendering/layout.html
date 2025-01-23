@@ -1,16 +1,26 @@
 <sherpa sherpa-component="exception">
   <div class="sherpa-content">
     <header>
-      @Sherpa(.Exception.Name)
+      <h1>@Sherpa(.Exception.Name)</h1>
+      <p class="source">
+        @Sherpa(.Exception.File):
+        @Sherpa(.Exception.Line)
+      </p>
     </header>
 
     <div class="content-body">
       <aside>
+        <h2 class="section-title">
+          Trace
+        </h2>
+
         @Sherpa(.Exception.Thread)
       </aside>
 
       <main>
-        @Sherpa(.Exception.Source)
+        <p class="message">
+          @Sherpa(.Exception.Message)
+        </p>
       </main>
     </div>
   </div>

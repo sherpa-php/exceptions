@@ -5,6 +5,9 @@ namespace Sherpa\Exceptions\exceptions;
 use Exception;
 use Sherpa\Ui\rendering\UI;
 
+/**
+ * @deprecated
+ */
 class ExceptionUI extends UI
 {
     private Exception $exception;

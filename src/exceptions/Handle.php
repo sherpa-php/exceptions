@@ -7,6 +7,7 @@ use Exception;
 /**
  * Handle PHP errors and exceptions
  * using this class.
+ * @deprecated
  */
 class Handle
 {

@@ -24,6 +24,7 @@ class SherpaException extends Exception
      *          - ORM Exceptions:   125X
      *      Validator Exceptions:   13XX
      *      Security Exceptions:    14XX
+     *      Files Exceptions:       15XX
      *
      */
 

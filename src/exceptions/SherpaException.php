@@ -21,9 +21,10 @@ class SherpaException extends Exception
      *      Router Exceptions:      10XX
      *      Middlewares Exceptions: 11XX
      *      Database Exceptions:    12XX
-     *          - ORM Exceptions:   125X
+     *          - ORM:              125X
      *      Validator Exceptions:   13XX
      *      Security Exceptions:    14XX
+     *          - Encryptor:        141X
      *      Files Exceptions:       15XX
      *      Tests Exceptions:       16XX
      *
